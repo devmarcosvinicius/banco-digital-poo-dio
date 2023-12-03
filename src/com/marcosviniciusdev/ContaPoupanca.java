@@ -1,7 +1,6 @@
 package com.marcosviniciusdev;
 
 public class ContaPoupanca extends Conta {
-
     public ContaPoupanca(Cliente cliente) {
         super(cliente);
     }
