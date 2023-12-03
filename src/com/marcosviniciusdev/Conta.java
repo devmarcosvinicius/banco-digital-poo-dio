@@ -1,5 +1,8 @@
 package com.marcosviniciusdev;
 
+import lombok.Data;
+
+@Data
 public abstract class Conta implements iConta {
 
     protected static final int AGENCIA_PADRAO = 1;
@@ -15,18 +18,6 @@ public abstract class Conta implements iConta {
         this.agencia = Conta.AGENCIA_PADRAO;
         this.numero = SEQUENCIAL++;
         this.cliente = cliente;
-    }
-
-    public int getAgencia() {
-        return agencia;
-    }
-
-    public int getNumero() {
-        return numero;
-    }
-
-    public double getSaldo() {
-        return saldo;
     }
 
     @Override
