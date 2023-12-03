@@ -8,4 +8,6 @@ public interface iConta {
 
     void transferir(Conta contaDestino, double valor);
 
+    void imprimirExtrato();
+
 }
